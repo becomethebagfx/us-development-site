@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Projects | US Development — Turnkey Construction Management</title>
+  <meta name="description" content="Explore US Development's portfolio of multi-family, mixed-use, commercial, and senior living projects delivered through integrated construction management. Louisville, KY.">
+  <link rel="canonical" href="https://us-development.onrender.com/projects.html">
+
+  <meta property="og:title" content="Project Portfolio | US Development">
+  <meta property="og:description" content="Multi-family, mixed-use, commercial, and senior living projects delivered through integrated construction management.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://us-development.onrender.com/projects.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80">
+  <meta property="og:site_name" content="US Development">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Project Portfolio | US Development">
+  <meta name="twitter:description" content="Multi-family, mixed-use, commercial, and senior living projects delivered through integrated construction management.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1B2A4A', dark: '#0F1A2E', light: '#2A3F6B' },
+            'tan': { DEFAULT: '#C4AF94', dark: '#B09A7E', light: '#D4C4AE' },
+            'warm-gray': { DEFAULT: '#8B8589', dark: '#6B6569', light: '#A8A3A7' },
+          },
+          fontFamily: {
+            'heading': ['Playfair Display', 'Georgia', 'serif'],
+            'body': ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-heading { font-family: 'Playfair Display', Georgia, serif; }
+    .hero-overlay { background: linear-gradient(135deg, rgba(27,42,74,0.92) 0%, rgba(27,42,74,0.75) 100%); }
+    .nav-scrolled { background: rgba(27,42,74,0.98); backdrop-filter: blur(12px); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    html { scroll-behavior: smooth; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #C4AF94; outline-offset: 2px; border-radius: 4px; }
+    .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); z-index: 100; }
+    .skip-link:focus { top: 8px; }
+    .filter-active { background-color: #1B2A4A; color: white; }
+    .project-card { transition: opacity 0.4s ease, transform 0.4s ease; }
+    .project-card.hidden-filter { opacity: 0; transform: scale(0.95); position: absolute; pointer-events: none; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://us-development.onrender.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://us-development.onrender.com/projects.html" }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-gray-800 font-body">
+
+  <a href="#main" class="skip-link bg-tan text-navy font-semibold px-4 py-2 rounded-md z-50">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="/" class="flex items-center space-x-1 group">
+          <span class="text-2xl font-heading font-bold text-white tracking-wide">US</span>
+          <span class="text-tan text-2xl font-light mx-1">|</span>
+          <span class="text-lg font-heading text-white tracking-widest uppercase">Development</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/services.html" class="text-gray-300 hover:text-tan transition-colors text-sm font-medium tracking-wide uppercase">Services</a>
+          <a href="/projects.html" class="text-tan transition-colors text-sm font-medium tracking-wide uppercase">Projects</a>
+          <a href="/about.html" class="text-gray-300 hover:text-tan transition-colors text-sm font-medium tracking-wide uppercase">About</a>
+          <a href="/blog.html" class="text-gray-300 hover:text-tan transition-colors text-sm font-medium tracking-wide uppercase">Insights</a>
+          <a href="/contact.html" class="text-gray-300 hover:text-tan transition-colors text-sm font-medium tracking-wide uppercase">Contact</a>
+          <a href="/contact.html" class="bg-tan hover:bg-tan-dark text-navy font-semibold px-5 py-2.5 rounded-md transition-colors text-sm tracking-wide">Start Your Project</a>
+        </div>
+        <button id="mobile-toggle" class="md:hidden text-white" aria-label="Toggle mobile menu" aria-expanded="false">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-navy-dark border-t border-white/10">
+      <div class="px-4 py-4 space-y-3">
+        <a href="/services.html" class="block text-gray-300 hover:text-tan py-2 text-sm font-medium uppercase tracking-wide">Services</a>
+        <a href="/projects.html" class="block text-tan py-2 text-sm font-medium uppercase tracking-wide">Projects</a>
+        <a href="/about.html" class="block text-gray-300 hover:text-tan py-2 text-sm font-medium uppercase tracking-wide">About</a>
+        <a href="/blog.html" class="block text-gray-300 hover:text-tan py-2 text-sm font-medium uppercase tracking-wide">Insights</a>
+        <a href="/contact.html" class="block text-gray-300 hover:text-tan py-2 text-sm font-medium uppercase tracking-wide">Contact</a>
+        <a href="/contact.html" class="block bg-tan hover:bg-tan-dark text-navy font-semibold px-5 py-2.5 rounded-md text-center text-sm mt-2">Start Your Project</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="bg-navy pt-32 pb-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="Breadcrumb" class="mb-8">
+          <ol class="flex items-center gap-2 text-sm text-gray-400">
+            <li><a href="/" class="hover:text-tan transition-colors">Home</a></li>
+            <li><i data-lucide="chevron-right" class="w-4 h-4"></i></li>
+            <li class="text-tan">Projects</li>
+          </ol>
+        </nav>
+        <div class="max-w-3xl">
+          <p class="text-tan font-medium tracking-[0.2em] uppercase text-sm mb-4">Our Portfolio</p>
+          <h1 class="font-heading text-5xl sm:text-6xl font-bold text-white leading-tight mb-6">Our Projects</h1>
+          <p class="text-xl text-gray-300 leading-relaxed">Multi-family, mixed-use, commercial, and senior living projects delivered through the integrated power of the US Family of Companies. Each project demonstrates the schedule compression and cost savings that come from unified trade coordination.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="bg-gray-50 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex flex-wrap gap-3" id="filter-buttons" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn filter-active px-5 py-2.5 rounded-full text-sm font-medium border border-gray-300 transition-all" data-filter="all">All Projects</button>
+          <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium border border-gray-300 text-warm-gray hover:border-navy hover:text-navy transition-all" data-filter="multi-family">Multi-Family</button>
+          <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium border border-gray-300 text-warm-gray hover:border-navy hover:text-navy transition-all" data-filter="mixed-use">Mixed-Use</button>
+          <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium border border-gray-300 text-warm-gray hover:border-navy hover:text-navy transition-all" data-filter="commercial">Commercial</button>
+          <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium border border-gray-300 text-warm-gray hover:border-navy hover:text-navy transition-all" data-filter="senior-living">Senior Living</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Grid -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="project-grid">
+
+          <!-- Project 1: The Meridian -->
+          <div class="project-card card-hover bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100" data-category="multi-family">
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80" alt="The Meridian at Louisville multi-family residential complex" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute top-3 left-3">
+                <span class="bg-navy/90 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">Multi-Family</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-navy mb-2">The Meridian at Louisville</h3>
+              <p class="text-warm-gray text-sm leading-relaxed mb-4">320-unit multi-family development with integrated framing, drywall, and exterior finishes delivered through full US Family coordination.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">320 Units</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">4 Trades</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">3 Wk Ahead</span>
+              </div>
+              <div class="flex items-center gap-2 text-tan-dark text-sm font-medium">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                <span>Louisville, KY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Riverside Commerce Center -->
+          <div class="project-card card-hover bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100" data-category="mixed-use">
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="Riverside Commerce Center mixed-use development" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute top-3 left-3">
+                <span class="bg-navy/90 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">Mixed-Use</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-navy mb-2">Riverside Commerce Center</h3>
+              <p class="text-warm-gray text-sm leading-relaxed mb-4">180,000 SF mixed-use development combining retail, office, and residential spaces with integrated trade delivery across all building systems.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">180K SF</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">Retail + Office</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">Residential</span>
+              </div>
+              <div class="flex items-center gap-2 text-tan-dark text-sm font-medium">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                <span>Louisville, KY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Bluegrass Senior Living -->
+          <div class="project-card card-hover bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100" data-category="senior-living">
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Bluegrass Senior Living community building" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute top-3 left-3">
+                <span class="bg-navy/90 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">Senior Living</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-navy mb-2">Bluegrass Senior Living</h3>
+              <p class="text-warm-gray text-sm leading-relaxed mb-4">200-bed senior living facility delivered turnkey from land acquisition through certificate of occupancy with full family trade integration.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">200 Beds</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">Turnkey</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">Full Lifecycle</span>
+              </div>
+              <div class="flex items-center gap-2 text-tan-dark text-sm font-medium">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                <span>Lexington, KY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Metro Park Apartments -->
+          <div class="project-card card-hover bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100" data-category="multi-family">
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=600&q=80" alt="Metro Park Apartments high-rise residential building" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute top-3 left-3">
+                <span class="bg-navy/90 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">Multi-Family</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-navy mb-2">Metro Park Apartments</h3>
+              <p class="text-warm-gray text-sm leading-relaxed mb-4">450-unit apartment community where multi-trade coordination saved $150K in carrying costs and eliminated 85 hours of schedule coordination.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">450 Units</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">$150K Saved</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">85 Hrs Saved</span>
+              </div>
+              <div class="flex items-center gap-2 text-tan-dark text-sm font-medium">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                <span>Nashville, TN</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Innovation Hub -->
+          <div class="project-card card-hover bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100" data-category="commercial">
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Innovation Hub creative office space interior" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute top-3 left-3">
+                <span class="bg-navy/90 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">Commercial</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-navy mb-2">Innovation Hub</h3>
+              <p class="text-warm-gray text-sm leading-relaxed mb-4">120,000 SF creative office space featuring mass timber structural elements integrated with drywall interior finishes for a modern workspace.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">120K SF</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">Mass Timber</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">Creative Office</span>
+              </div>
+              <div class="flex items-center gap-2 text-tan-dark text-sm font-medium">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                <span>Cincinnati, OH</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Heritage Townhomes -->
+          <div class="project-card card-hover bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100" data-category="multi-family">
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="Heritage Townhomes wood framing construction" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute top-3 left-3">
+                <span class="bg-navy/90 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">Multi-Family</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-navy mb-2">Heritage Townhomes</h3>
+              <p class="text-warm-gray text-sm leading-relaxed mb-4">180 townhome units delivered with a 3-week schedule compression through integrated framing-to-exterior sequencing across the community.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">180 Units</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">3 Wk Faster</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">Townhomes</span>
+              </div>
+              <div class="flex items-center gap-2 text-tan-dark text-sm font-medium">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                <span>Louisville, KY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: Lakefront Mixed-Use -->
+          <div class="project-card card-hover bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100" data-category="mixed-use">
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80" alt="Lakefront Mixed-Use development with residential and retail" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute top-3 left-3">
+                <span class="bg-navy/90 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">Mixed-Use</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-navy mb-2">Lakefront Mixed-Use</h3>
+              <p class="text-warm-gray text-sm leading-relaxed mb-4">250 residential units above 40,000 SF of ground-floor retail space, managed through full multi-trade coordination on a waterfront site.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">250 Units</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">40K SF Retail</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">Waterfront</span>
+              </div>
+              <div class="flex items-center gap-2 text-tan-dark text-sm font-medium">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                <span>Indianapolis, IN</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8: Commonwealth Senior Care -->
+          <div class="project-card card-hover bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100" data-category="senior-living">
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Commonwealth Senior Care construction with multi-trade coordination" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute top-3 left-3">
+                <span class="bg-navy/90 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">Senior Living</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-navy mb-2">Commonwealth Senior Care</h3>
+              <p class="text-warm-gray text-sm leading-relaxed mb-4">150-bed ADA-optimized senior care facility with 4-trade coordination delivering framing, drywall, exteriors, and site development as one team.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">150 Beds</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">ADA-Optimized</span>
+                <span class="bg-tan/10 text-tan-dark text-xs font-medium px-2.5 py-1 rounded">4 Trades</span>
+              </div>
+              <div class="flex items-center gap-2 text-tan-dark text-sm font-medium">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                <span>Frankfort, KY</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-navy-dark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 reveal">
+          <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-4">Project Delivery by the Numbers</h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">Our integrated model produces measurable results across every project type and size.</p>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 reveal">
+          <div class="text-center bg-white/5 rounded-xl p-8 border border-white/10">
+            <div class="text-4xl font-heading font-bold text-tan mb-2">1,920+</div>
+            <p class="text-gray-400 text-sm uppercase tracking-wider">Total Units Delivered</p>
+          </div>
+          <div class="text-center bg-white/5 rounded-xl p-8 border border-white/10">
+            <div class="text-4xl font-heading font-bold text-tan mb-2">8</div>
+            <p class="text-gray-400 text-sm uppercase tracking-wider">Major Projects</p>
+          </div>
+          <div class="text-center bg-white/5 rounded-xl p-8 border border-white/10">
+            <div class="text-4xl font-heading font-bold text-tan mb-2">$1.2M+</div>
+            <p class="text-gray-400 text-sm uppercase tracking-wider">Client Cost Savings</p>
+          </div>
+          <div class="text-center bg-white/5 rounded-xl p-8 border border-white/10">
+            <div class="text-4xl font-heading font-bold text-tan mb-2">15+ Wk</div>
+            <p class="text-gray-400 text-sm uppercase tracking-wider">Total Time Saved</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-24">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1920&q=80" alt="Construction equipment on active job site" class="w-full h-full object-cover" loading="lazy">
+        <div class="hero-overlay absolute inset-0"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-heading text-4xl sm:text-5xl font-bold text-white mb-6 reveal">Your Project Could Be Next</h2>
+        <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto reveal">
+          Whether you are developing multi-family, mixed-use, commercial, or senior living, our integrated construction management approach delivers faster schedules and lower costs.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center reveal">
+          <a href="/contact.html" class="bg-tan hover:bg-tan-dark text-navy font-semibold px-8 py-4 rounded-md transition-colors text-lg">Start Your Project</a>
+          <a href="/services.html" class="border-2 border-white/30 hover:border-tan text-white hover:text-tan font-semibold px-8 py-4 rounded-md transition-colors text-lg">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy-dark pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div>
+          <div class="flex items-center space-x-1 mb-4">
+            <span class="text-xl font-heading font-bold text-white">US</span>
+            <span class="text-tan text-xl font-light mx-1">|</span>
+            <span class="text-sm font-heading text-white tracking-widest uppercase">Development</span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">Turnkey construction management coordinating the US Family of Companies. One point of contact for integrated project delivery.</p>
+          <div class="flex gap-4">
+            <a href="#" aria-label="LinkedIn" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-tan/20 transition-colors">
+              <i data-lucide="linkedin" class="w-5 h-5 text-gray-400 hover:text-tan"></i>
+            </a>
+            <a href="#" aria-label="Facebook" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-tan/20 transition-colors">
+              <i data-lucide="facebook" class="w-5 h-5 text-gray-400 hover:text-tan"></i>
+            </a>
+            <a href="#" aria-label="Instagram" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-tan/20 transition-colors">
+              <i data-lucide="instagram" class="w-5 h-5 text-gray-400 hover:text-tan"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="/services.html#construction-management" class="text-gray-400 hover:text-tan transition-colors text-sm">Construction Management</a></li>
+            <li><a href="/services.html#general-contracting" class="text-gray-400 hover:text-tan transition-colors text-sm">General Contracting</a></li>
+            <li><a href="/services.html#pre-construction" class="text-gray-400 hover:text-tan transition-colors text-sm">Pre-Construction Services</a></li>
+            <li><a href="/services.html#turnkey-development" class="text-gray-400 hover:text-tan transition-colors text-sm">Turnkey Development</a></li>
+            <li><a href="/services.html#multi-trade" class="text-gray-400 hover:text-tan transition-colors text-sm">Multi-Trade Coordination</a></li>
+            <li><a href="/services.html#owners-rep" class="text-gray-400 hover:text-tan transition-colors text-sm">Owner's Representation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="/about.html" class="text-gray-400 hover:text-tan transition-colors text-sm">About</a></li>
+            <li><a href="/projects.html" class="text-gray-400 hover:text-tan transition-colors text-sm">Projects</a></li>
+            <li><a href="/blog.html" class="text-gray-400 hover:text-tan transition-colors text-sm">Insights</a></li>
+            <li><a href="/contact.html" class="text-gray-400 hover:text-tan transition-colors text-sm">Contact</a></li>
+            <li><a href="https://us-framing.onrender.com" target="_blank" rel="noopener" class="text-gray-400 hover:text-tan transition-colors text-sm">US Framing</a></li>
+            <li><a href="https://us-drywall.onrender.com" target="_blank" rel="noopener" class="text-gray-400 hover:text-tan transition-colors text-sm">US Drywall</a></li>
+            <li><a href="https://us-exteriors.onrender.com" target="_blank" rel="noopener" class="text-gray-400 hover:text-tan transition-colors text-sm">US Exteriors</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-3">
+            <li class="flex gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-tan flex-shrink-0 mt-0.5"></i>
+              <span class="text-gray-400 text-sm">4965 US Highway 42, Suite 220<br>Louisville, KY 40222</span>
+            </li>
+            <li class="flex gap-3">
+              <i data-lucide="phone" class="w-5 h-5 text-tan flex-shrink-0"></i>
+              <a href="tel:+15025550195" class="text-gray-400 hover:text-tan transition-colors text-sm">(502) 555-0195</a>
+            </li>
+            <li class="flex gap-3">
+              <i data-lucide="mail" class="w-5 h-5 text-tan flex-shrink-0"></i>
+              <a href="mailto:info@usdevelopment.com" class="text-gray-400 hover:text-tan transition-colors text-sm">info@usdevelopment.com</a>
+            </li>
+            <li class="flex gap-3">
+              <i data-lucide="clock" class="w-5 h-5 text-tan flex-shrink-0"></i>
+              <span class="text-gray-400 text-sm">Mon-Fri: 7:00 AM - 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-500 text-sm">&copy; 2026 US Development. All rights reserved. A US Family of Companies partner.</p>
+        <div class="flex gap-6">
+          <a href="/privacy-policy.html" class="text-gray-500 hover:text-tan transition-colors text-sm">Privacy Policy</a>
+          <a href="/terms.html" class="text-gray-500 hover:text-tan transition-colors text-sm">Terms</a>
+          <a href="/sitemap.xml" class="text-gray-500 hover:text-tan transition-colors text-sm">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileToggle.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      mobileToggle.setAttribute('aria-expanded', !isOpen);
+    });
+
+    // Navbar scroll shadow
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('nav-scrolled');
+      } else {
+        navbar.classList.remove('nav-scrolled');
+      }
+    });
+
+    // Project Filter
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    const projectGrid = document.getElementById('project-grid');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+
+        // Update active button
+        filterButtons.forEach(btn => {
+          btn.classList.remove('filter-active');
+          btn.classList.add('text-warm-gray');
+        });
+        button.classList.add('filter-active');
+        button.classList.remove('text-warm-gray');
+
+        // Filter cards
+        projectCards.forEach(card => {
+          const category = card.dataset.category;
+          if (filter === 'all' || category === filter) {
+            card.style.display = '';
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1)';
+            card.style.position = '';
+            card.style.pointerEvents = '';
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // Scroll reveal with IntersectionObserver
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReducedMotion) {
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+      document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    }
+  </script>
+
+</body>
+</html>

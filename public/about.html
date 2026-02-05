@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | US Development | Turnkey Construction Management</title>
+  <meta name="description" content="US Development provides turnkey construction management as the coordination layer of the US Family of Companies. Founded in 2020, headquartered in Louisville, KY.">
+  <link rel="canonical" href="https://usdevelopment.com/about.html">
+
+  <meta property="og:title" content="About Us | US Development">
+  <meta property="og:description" content="Turnkey construction management. The coordination layer of the US Family of Companies, providing a single point of contact for owners, developers, and GCs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://usdevelopment.com/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1B2A4A', dark: '#0F1A2E', light: '#2A3F6B' },
+            'tan': { DEFAULT: '#C4AF94', dark: '#B09A7E', light: '#D4C4AE' },
+            'warm-gray': { DEFAULT: '#8B8589', dark: '#6B6569', light: '#A8A3A7' },
+          },
+          fontFamily: {
+            'heading': ['Playfair Display', 'Georgia', 'serif'],
+            'body': ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-heading { font-family: 'Playfair Display', Georgia, serif; }
+    .hero-overlay { background: linear-gradient(135deg, rgba(27,42,74,0.92) 0%, rgba(27,42,74,0.75) 100%); }
+    .nav-scrolled { background: rgba(27,42,74,0.98); backdrop-filter: blur(12px); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .stagger > * { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .stagger.visible > *:nth-child(1) { transition-delay: 0ms; opacity: 1; transform: translateY(0); }
+    .stagger.visible > *:nth-child(2) { transition-delay: 100ms; opacity: 1; transform: translateY(0); }
+    .stagger.visible > *:nth-child(3) { transition-delay: 200ms; opacity: 1; transform: translateY(0); }
+    .stagger.visible > *:nth-child(4) { transition-delay: 300ms; opacity: 1; transform: translateY(0); }
+    html { scroll-behavior: smooth; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #C4AF94; outline-offset: 2px; border-radius: 4px; }
+    .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); z-index: 100; }
+    .skip-link:focus { top: 8px; }
+  </style>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://usdevelopment.com/" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://usdevelopment.com/about.html" }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <a href="#main" class="skip-link bg-tan text-navy font-semibold px-4 py-2 rounded-b-lg">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-navy transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="/" class="flex items-center gap-3 group" aria-label="US Development Home">
+          <span class="font-heading text-3xl font-bold text-white">US</span>
+          <span class="w-0.5 h-8 bg-tan rounded-full"></span>
+          <div class="flex flex-col">
+            <span class="font-body text-xl font-light text-white tracking-widest">DEVELOPMENT</span>
+            <span class="font-body text-[9px] font-medium text-tan tracking-[0.2em] -mt-0.5">TURNKEY CONSTRUCTION MANAGEMENT</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="/services.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Services</a>
+          <a href="/projects.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Projects</a>
+          <a href="/about.html" class="text-sm font-medium text-tan border-b-2 border-tan pb-0.5">About</a>
+          <a href="/blog.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Insights</a>
+          <a href="/contact.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Contact</a>
+          <a href="/contact.html" class="inline-flex items-center px-6 py-2.5 bg-tan hover:bg-tan-dark text-navy font-semibold text-sm rounded transition-all duration-200 shadow-md hover:shadow-lg">Start Your Project</a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-white" aria-label="Open navigation menu" aria-expanded="false">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-navy/95 z-50 lg:hidden">
+      <div class="flex flex-col items-center justify-center h-full gap-8">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 text-white p-2" aria-label="Close navigation menu">
+          <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        <a href="/services.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Services</a>
+        <a href="/projects.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Projects</a>
+        <a href="/about.html" class="text-2xl font-heading text-tan">About</a>
+        <a href="/blog.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Insights</a>
+        <a href="/contact.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Contact</a>
+        <a href="/contact.html" class="mt-4 px-8 py-3 bg-tan text-navy font-semibold text-lg rounded">Start Your Project</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="relative pt-20 min-h-[40vh] flex items-center overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80" alt="Construction management team overseeing a large-scale building project" class="w-full h-full object-cover" loading="eager">
+        <div class="hero-overlay absolute inset-0"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <nav aria-label="Breadcrumb" class="mb-4">
+          <ol class="flex items-center gap-2 text-sm text-white/50">
+            <li><a href="/" class="hover:text-tan-light transition-colors">Home</a></li>
+            <li>/</li>
+            <li class="text-tan-light font-medium">About</li>
+          </ol>
+        </nav>
+        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">About US Development</h1>
+        <p class="font-body text-lg text-white/70 max-w-2xl">The coordination layer of the US Family of Companies, providing turnkey construction management for owners, developers, and general contractors nationwide.</p>
+      </div>
+    </section>
+
+    <!-- COMPANY STORY -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal">
+          <div>
+            <p class="text-tan-dark font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Our Story</p>
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-navy mb-6">Built to Coordinate. Created to Simplify.</h2>
+            <div class="space-y-4 text-gray-600 leading-relaxed">
+              <p>US Development was founded in 2020 as the coordination layer of the US Family of Companies. Born from the success of US Framing -- established in the early 1990s by Thomas English -- US Development was created to provide a single point of contact for owners, developers, and general contractors who need multiple trades coordinated under one management umbrella.</p>
+              <p>As the US Family grew to include US Drywall, US Exteriors, and the forthcoming US Interiors, the need for a dedicated management entity became clear. Rather than requiring clients to coordinate between separate framing, drywall, and exterior contractors, US Development offers turnkey construction management -- one contract, one schedule, one team accountable for results from framing through finish.</p>
+              <p>Headquartered at 4965 US Highway 42, Suite 220, Louisville, Kentucky, US Development serves as the strategic hub connecting the specialized capabilities of every family company into a seamless, integrated delivery model.</p>
+            </div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" alt="US Development construction coordination on a commercial project" class="w-full h-auto" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION STATEMENT -->
+    <section class="py-20 lg:py-28 bg-navy">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+        <div class="w-16 h-16 mx-auto mb-8 rounded-full bg-tan/20 flex items-center justify-center">
+          <i data-lucide="target" class="w-8 h-8 text-tan-light"></i>
+        </div>
+        <p class="text-tan-light font-body text-sm font-semibold tracking-[0.2em] uppercase mb-4">Our Mission</p>
+        <blockquote class="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-snug">
+          "To simplify construction delivery by integrating specialized trades under one management team, delivering turnkey results that save time, reduce risk, and eliminate coordination gaps."
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="py-20 lg:py-28 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+          <p class="text-tan-dark font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Our Journey</p>
+          <h2 class="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">The US Family Timeline</h2>
+          <p class="font-body text-lg text-gray-500 max-w-2xl mx-auto">From a single framing crew to a fully integrated family of construction companies.</p>
+        </div>
+
+        <div class="relative">
+          <div class="absolute left-4 lg:left-1/2 top-0 bottom-0 w-0.5 bg-tan/30 -translate-x-1/2"></div>
+
+          <div class="space-y-12 reveal">
+            <!-- 1990s -->
+            <div class="relative flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-8">
+              <div class="lg:w-1/2 lg:text-right lg:pr-8 pl-10 lg:pl-0">
+                <span class="font-heading text-2xl font-bold text-tan-dark">1990s</span>
+                <h3 class="font-heading text-lg font-semibold text-navy mt-1">US Framing Founded</h3>
+                <p class="text-sm text-gray-500 mt-2">Thomas English establishes US Framing International with a small crew in Kentucky. The foundation of what would become a family of construction companies begins with a commitment to quality craftsmanship and safety.</p>
+              </div>
+              <div class="absolute left-4 lg:left-1/2 w-4 h-4 rounded-full bg-tan border-4 border-white shadow -translate-x-1/2"></div>
+              <div class="lg:w-1/2 lg:pl-8"></div>
+            </div>
+
+            <!-- 2010s -->
+            <div class="relative flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-8">
+              <div class="lg:w-1/2 lg:pr-8"></div>
+              <div class="absolute left-4 lg:left-1/2 w-4 h-4 rounded-full bg-tan border-4 border-white shadow -translate-x-1/2"></div>
+              <div class="lg:w-1/2 lg:pl-8 pl-10">
+                <span class="font-heading text-2xl font-bold text-tan-dark">2010s</span>
+                <h3 class="font-heading text-lg font-semibold text-navy mt-1">US Drywall Launched</h3>
+                <p class="text-sm text-gray-500 mt-2">Recognizing the natural synergy between framing and drywall, the US Family expands with the launch of US Drywall, offering interior finishing capabilities to complement structural framing.</p>
+              </div>
+            </div>
+
+            <!-- 2018 -->
+            <div class="relative flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-8">
+              <div class="lg:w-1/2 lg:text-right lg:pr-8 pl-10 lg:pl-0">
+                <span class="font-heading text-2xl font-bold text-tan-dark">2018</span>
+                <h3 class="font-heading text-lg font-semibold text-navy mt-1">US Exteriors Launched</h3>
+                <p class="text-sm text-gray-500 mt-2">US Exteriors joins the family, adding siding, EIFS, stucco, and building envelope capabilities. The vision of a framing-through-finish operation begins to take shape.</p>
+              </div>
+              <div class="absolute left-4 lg:left-1/2 w-4 h-4 rounded-full bg-tan border-4 border-white shadow -translate-x-1/2"></div>
+              <div class="lg:w-1/2 lg:pl-8"></div>
+            </div>
+
+            <!-- 2020 -->
+            <div class="relative flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-8">
+              <div class="lg:w-1/2 lg:pr-8"></div>
+              <div class="absolute left-4 lg:left-1/2 w-4 h-4 rounded-full bg-tan border-4 border-white shadow -translate-x-1/2"></div>
+              <div class="lg:w-1/2 lg:pl-8 pl-10">
+                <span class="font-heading text-2xl font-bold text-tan-dark">2020</span>
+                <h3 class="font-heading text-lg font-semibold text-navy mt-1">US Development Created</h3>
+                <p class="text-sm text-gray-500 mt-2">US Development is established as the coordination hub of the US Family. For the first time, clients can access framing, drywall, and exteriors through a single turnkey management layer.</p>
+              </div>
+            </div>
+
+            <!-- 2024 -->
+            <div class="relative flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-8">
+              <div class="lg:w-1/2 lg:text-right lg:pr-8 pl-10 lg:pl-0">
+                <span class="font-heading text-2xl font-bold text-tan-dark">2024</span>
+                <h3 class="font-heading text-lg font-semibold text-navy mt-1">US Interiors Announced</h3>
+                <p class="text-sm text-gray-500 mt-2">The US Family announces US Interiors, expanding the integrated service offering to include interior finishing and build-outs, completing the framing-through-finish promise.</p>
+              </div>
+              <div class="absolute left-4 lg:left-1/2 w-4 h-4 rounded-full bg-tan border-4 border-white shadow -translate-x-1/2"></div>
+              <div class="lg:w-1/2 lg:pl-8"></div>
+            </div>
+
+            <!-- 2026 -->
+            <div class="relative flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-8">
+              <div class="lg:w-1/2 lg:pr-8"></div>
+              <div class="absolute left-4 lg:left-1/2 w-4 h-4 rounded-full bg-tan border-4 border-white shadow -translate-x-1/2"></div>
+              <div class="lg:w-1/2 lg:pl-8 pl-10">
+                <span class="font-heading text-2xl font-bold text-tan-dark">2026</span>
+                <h3 class="font-heading text-lg font-semibold text-navy mt-1">Full-Service Family Serving Nationwide</h3>
+                <p class="text-sm text-gray-500 mt-2">The US Family of Companies now serves markets nationwide with fully integrated construction services -- from structural framing through interior finish -- all coordinated by US Development.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE VALUES -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+          <p class="text-tan-dark font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">What Drives Us</p>
+          <h2 class="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">Core Values</h2>
+          <p class="font-body text-lg text-gray-500 max-w-2xl mx-auto">The principles that guide every project, every decision, and every relationship at US Development.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
+          <div class="bg-gray-50 rounded-xl p-6 text-center card-hover">
+            <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-tan/15 flex items-center justify-center">
+              <i data-lucide="handshake" class="w-7 h-7 text-tan-dark"></i>
+            </div>
+            <h3 class="font-heading text-lg font-semibold text-navy mb-2">Integrity</h3>
+            <p class="text-sm text-gray-500">Transparent communication, honest estimates, and commitments we stand behind. Our word is our bond on every project.</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-6 text-center card-hover">
+            <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-tan/15 flex items-center justify-center">
+              <i data-lucide="layers" class="w-7 h-7 text-tan-dark"></i>
+            </div>
+            <h3 class="font-heading text-lg font-semibold text-navy mb-2">Integration</h3>
+            <p class="text-sm text-gray-500">One management team coordinating multiple trades. Seamless delivery from framing through finish, eliminating coordination gaps.</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-6 text-center card-hover">
+            <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-tan/15 flex items-center justify-center">
+              <i data-lucide="lightbulb" class="w-7 h-7 text-tan-dark"></i>
+            </div>
+            <h3 class="font-heading text-lg font-semibold text-navy mb-2">Innovation</h3>
+            <p class="text-sm text-gray-500">BIM technology, digital project management, and data-driven scheduling keep our projects ahead of traditional methods.</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-6 text-center card-hover">
+            <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-tan/15 flex items-center justify-center">
+              <i data-lucide="shield-check" class="w-7 h-7 text-tan-dark"></i>
+            </div>
+            <h3 class="font-heading text-lg font-semibold text-navy mb-2">Safety</h3>
+            <p class="text-sm text-gray-500">0.5 EMR across the US Family of Companies. Every crew member trained, every jobsite audited, zero compromises on safety.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section class="py-20 lg:py-28 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+          <p class="text-tan-dark font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Our Team</p>
+          <h2 class="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">Leadership</h2>
+        </div>
+
+        <div class="max-w-2xl mx-auto reveal">
+          <div class="bg-white rounded-xl p-8 shadow-sm text-center">
+            <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-navy to-navy-light flex items-center justify-center">
+              <span class="font-heading text-3xl font-bold text-tan-light">TE</span>
+            </div>
+            <h3 class="font-heading text-2xl font-semibold text-navy">Thomas English</h3>
+            <p class="text-sm text-tan-dark font-semibold mb-4">CEO, US Family of Companies</p>
+            <p class="text-gray-500 leading-relaxed max-w-lg mx-auto">Thomas English founded the US Family of Companies beginning with US Framing International in the early 1990s. His vision of integrating specialized construction trades under one management umbrella led to the creation of US Development in 2020. Under his leadership, the family has grown to include US Framing, US Drywall, US Exteriors, and the forthcoming US Interiors -- delivering turnkey construction services from framing through finish across the United States.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAMILY ECOSYSTEM -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+          <p class="text-tan-dark font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Integrated Family Services</p>
+          <h2 class="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">The US Family of Companies</h2>
+          <p class="font-body text-lg text-gray-500 max-w-2xl mx-auto">US Development coordinates a family of specialized construction companies, delivering turnkey services through a single point of contact.</p>
+        </div>
+
+        <!-- Ecosystem Diagram -->
+        <div class="max-w-4xl mx-auto reveal">
+          <!-- Central Hub -->
+          <div class="bg-navy rounded-2xl p-8 text-center mb-8 shadow-lg">
+            <div class="flex items-center justify-center gap-3 mb-3">
+              <span class="font-heading text-3xl font-bold text-white">US</span>
+              <span class="w-0.5 h-8 bg-tan rounded-full"></span>
+              <span class="font-body text-xl font-light text-white tracking-widest">DEVELOPMENT</span>
+            </div>
+            <p class="text-tan-light text-sm font-medium tracking-wider uppercase">Coordination Hub &middot; Single Point of Contact</p>
+            <p class="text-white/60 text-sm mt-2 max-w-lg mx-auto">Turnkey construction management integrating all family company services under one contract, one schedule, one accountable team.</p>
+          </div>
+
+          <!-- Company Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a href="https://us-framing.onrender.com" target="_blank" rel="noopener" class="bg-gray-50 rounded-xl p-6 text-center card-hover border-2 border-transparent hover:border-tan/30">
+              <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-tan/15 flex items-center justify-center">
+                <i data-lucide="home" class="w-6 h-6 text-tan-dark"></i>
+              </div>
+              <h4 class="font-heading text-lg font-semibold text-navy">US Framing</h4>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wider">Est. 1990s</p>
+              <p class="text-sm text-gray-500 mt-2">Nation's largest multi-family wood framing group. 15M+ sqft annually.</p>
+            </a>
+            <a href="https://us-drywall.onrender.com" target="_blank" rel="noopener" class="bg-gray-50 rounded-xl p-6 text-center card-hover border-2 border-transparent hover:border-tan/30">
+              <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-tan/15 flex items-center justify-center">
+                <i data-lucide="paintbrush" class="w-6 h-6 text-tan-dark"></i>
+              </div>
+              <h4 class="font-heading text-lg font-semibold text-navy">US Drywall</h4>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wider">Est. 2010s</p>
+              <p class="text-sm text-gray-500 mt-2">Commercial drywall, metal framing, acoustical ceilings, and interior finishing.</p>
+            </a>
+            <a href="https://us-exteriors.onrender.com" target="_blank" rel="noopener" class="bg-gray-50 rounded-xl p-6 text-center card-hover border-2 border-transparent hover:border-tan/30">
+              <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-tan/15 flex items-center justify-center">
+                <i data-lucide="building" class="w-6 h-6 text-tan-dark"></i>
+              </div>
+              <h4 class="font-heading text-lg font-semibold text-navy">US Exteriors</h4>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wider">Est. 2018</p>
+              <p class="text-sm text-gray-500 mt-2">Siding, EIFS, stucco, and complete building envelope solutions.</p>
+            </a>
+            <div class="bg-gray-50 rounded-xl p-6 text-center border-2 border-dashed border-tan/30">
+              <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-tan/10 flex items-center justify-center">
+                <i data-lucide="sofa" class="w-6 h-6 text-tan/60"></i>
+              </div>
+              <h4 class="font-heading text-lg font-semibold text-navy/60">US Interiors</h4>
+              <p class="text-xs text-tan-dark mt-1 uppercase tracking-wider">Coming 2024</p>
+              <p class="text-sm text-gray-400 mt-2">Interior finishing and build-out services. Completing the framing-through-finish promise.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="relative py-24 overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80" alt="Modern construction project managed by US Development" class="w-full h-full object-cover" loading="lazy">
+        <div class="absolute inset-0 bg-navy/90"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Simplify Your Next Project?</h2>
+        <p class="font-body text-lg text-white/70 mb-10 max-w-2xl mx-auto">Let US Development coordinate your framing, drywall, and exteriors through a single management team. One contract. One schedule. One team accountable for results.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="/contact.html" class="inline-flex items-center px-8 py-4 bg-tan hover:bg-tan-dark text-navy font-semibold text-lg rounded transition-all duration-200 shadow-lg hover:shadow-xl">
+            Start Your Project <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+          </a>
+          <a href="/services.html" class="inline-flex items-center px-8 py-4 border-2 border-white/30 hover:border-white text-white font-semibold text-lg rounded transition-all duration-200">
+            <i data-lucide="layers" class="w-5 h-5 mr-2"></i>
+            View Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-dark pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <span class="font-heading text-2xl font-bold text-white">US</span>
+            <span class="w-0.5 h-6 bg-tan rounded-full"></span>
+            <span class="font-body text-lg font-light text-white tracking-widest">DEVELOPMENT</span>
+          </div>
+          <p class="text-sm text-white/50 mb-6 leading-relaxed">Turnkey construction management. The coordination layer of the US Family of Companies, integrating framing through finish under one management umbrella.</p>
+        </div>
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Services</h4>
+          <ul class="space-y-2.5">
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Construction Management</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Trade Coordination</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Pre-Construction</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Schedule Management</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Quality Assurance</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Turnkey Delivery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Company</h4>
+          <ul class="space-y-2.5">
+            <li><a href="/about.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">About Us</a></li>
+            <li><a href="/projects.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Projects</a></li>
+            <li><a href="/blog.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Insights</a></li>
+            <li><a href="/contact.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Contact</a></li>
+            <li><a href="https://us-framing.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-tan-light transition-colors">US Framing</a></li>
+            <li><a href="https://us-drywall.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-tan-light transition-colors">US Drywall</a></li>
+            <li><a href="https://us-exteriors.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-tan-light transition-colors">US Exteriors</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-tan-light mt-0.5 flex-shrink-0"></i><span class="text-sm text-white/50">4965 US Highway 42, Suite 220<br>Louisville, KY 40222</span></li>
+            <li class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-tan-light flex-shrink-0"></i><a href="tel:+15025550195" class="text-sm text-white/50 hover:text-tan-light transition-colors">(502) 555-0195</a></li>
+            <li class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-tan-light flex-shrink-0"></i><a href="mailto:info@usdevelopment.com" class="text-sm text-white/50 hover:text-tan-light transition-colors">info@usdevelopment.com</a></li>
+            <li class="flex items-center gap-3"><i data-lucide="clock" class="w-4 h-4 text-tan-light flex-shrink-0"></i><span class="text-sm text-white/50">Mon-Fri: 7:00 AM - 5:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-white/30">&copy; 2026 US Development. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="/privacy-policy.html" class="text-xs text-white/30 hover:text-white/50 transition-colors">Privacy Policy</a>
+          <a href="/terms.html" class="text-xs text-white/30 hover:text-white/50 transition-colors">Terms of Service</a>
+          <a href="/sitemap.xml" class="text-xs text-white/30 hover:text-white/50 transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuClose = document.getElementById('mobile-menu-close');
+    menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; menuBtn.setAttribute('aria-expanded', 'true'); });
+    menuClose.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; menuBtn.setAttribute('aria-expanded', 'false'); });
+    mobileMenu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; menuBtn.setAttribute('aria-expanded', 'false'); }); });
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('nav-scrolled', window.scrollY > 50); });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal, .stagger').forEach(el => revealObserver.observe(el));
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal, .stagger, .stagger > *').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; el.style.transition = 'none'; });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | US Development | Start Your Project</title>
+  <meta name="description" content="Contact US Development for turnkey construction management. Multi-family, mixed-use, commercial, and senior living projects. Call (502) 555-0195 or submit a project inquiry.">
+  <link rel="canonical" href="https://usdevelopment.com/contact.html">
+
+  <meta property="og:title" content="Contact Us | US Development">
+  <meta property="og:description" content="Start your turnkey construction project with US Development. One contract, one schedule, one team from framing through finish.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://usdevelopment.com/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1B2A4A', dark: '#0F1A2E', light: '#2A3F6B' },
+            'tan': { DEFAULT: '#C4AF94', dark: '#B09A7E', light: '#D4C4AE' },
+            'warm-gray': { DEFAULT: '#8B8589', dark: '#6B6569', light: '#A8A3A7' },
+          },
+          fontFamily: {
+            'heading': ['Playfair Display', 'Georgia', 'serif'],
+            'body': ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-heading { font-family: 'Playfair Display', Georgia, serif; }
+    .hero-overlay { background: linear-gradient(135deg, rgba(27,42,74,0.92) 0%, rgba(27,42,74,0.75) 100%); }
+    .nav-scrolled { background: rgba(27,42,74,0.98); backdrop-filter: blur(12px); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    html { scroll-behavior: smooth; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #C4AF94; outline-offset: 2px; border-radius: 4px; }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: #C4AF94; box-shadow: 0 0 0 3px rgba(196,175,148,0.15); }
+    .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); z-index: 100; }
+    .skip-link:focus { top: 8px; }
+  </style>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://usdevelopment.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://usdevelopment.com/contact.html" }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <a href="#main" class="skip-link bg-tan text-navy font-semibold px-4 py-2 rounded-b-lg">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-navy transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="/" class="flex items-center gap-3 group" aria-label="US Development Home">
+          <span class="font-heading text-3xl font-bold text-white">US</span>
+          <span class="w-0.5 h-8 bg-tan rounded-full"></span>
+          <div class="flex flex-col">
+            <span class="font-body text-xl font-light text-white tracking-widest">DEVELOPMENT</span>
+            <span class="font-body text-[9px] font-medium text-tan tracking-[0.2em] -mt-0.5">TURNKEY CONSTRUCTION MANAGEMENT</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="/services.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Services</a>
+          <a href="/projects.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Projects</a>
+          <a href="/about.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">About</a>
+          <a href="/blog.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Insights</a>
+          <a href="/contact.html" class="text-sm font-medium text-tan border-b-2 border-tan pb-0.5">Contact</a>
+          <a href="/contact.html" class="inline-flex items-center px-6 py-2.5 bg-tan hover:bg-tan-dark text-navy font-semibold text-sm rounded transition-all duration-200 shadow-md hover:shadow-lg">Start Your Project</a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-white" aria-label="Open navigation menu" aria-expanded="false">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-navy/95 z-50 lg:hidden">
+      <div class="flex flex-col items-center justify-center h-full gap-8">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 text-white p-2" aria-label="Close navigation menu">
+          <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        <a href="/services.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Services</a>
+        <a href="/projects.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Projects</a>
+        <a href="/about.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">About</a>
+        <a href="/blog.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Insights</a>
+        <a href="/contact.html" class="text-2xl font-heading text-tan">Contact</a>
+        <a href="/contact.html" class="mt-4 px-8 py-3 bg-tan text-navy font-semibold text-lg rounded">Start Your Project</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="relative pt-20 min-h-[35vh] flex items-center overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=80" alt="Construction planning and project coordination" class="w-full h-full object-cover" loading="eager">
+        <div class="hero-overlay absolute inset-0"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <nav aria-label="Breadcrumb" class="mb-4">
+          <ol class="flex items-center gap-2 text-sm text-white/50">
+            <li><a href="/" class="hover:text-tan-light transition-colors">Home</a></li>
+            <li>/</li>
+            <li class="text-tan-light font-medium">Contact</li>
+          </ol>
+        </nav>
+        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">Contact Us</h1>
+        <p class="font-body text-lg text-white/70 max-w-2xl">Ready to simplify your next construction project? Get in touch with our team to discuss turnkey management for your multi-family, commercial, or mixed-use development.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM + INFO -->
+    <section class="py-20 lg:py-28 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
+
+          <!-- Form (3 cols) -->
+          <div class="lg:col-span-3 reveal">
+            <h2 class="font-heading text-2xl sm:text-3xl font-bold text-navy mb-2">Start Your Project</h2>
+            <p class="text-gray-500 mb-8">Fill out the form below and our project management team will respond within one business day.</p>
+
+            <form id="contact-form" class="space-y-6" novalidate>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-sm font-semibold text-navy mb-1.5">Full Name <span class="text-red-500">*</span></label>
+                  <input type="text" id="name" name="name" required placeholder="John Smith" class="w-full h-12 px-4 border border-gray-200 rounded text-sm text-gray-800 placeholder-gray-400 transition-colors duration-200">
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-semibold text-navy mb-1.5">Email <span class="text-red-500">*</span></label>
+                  <input type="email" id="email" name="email" required placeholder="john@company.com" class="w-full h-12 px-4 border border-gray-200 rounded text-sm text-gray-800 placeholder-gray-400 transition-colors duration-200">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="phone" class="block text-sm font-semibold text-navy mb-1.5">Phone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="(502) 555-1234" class="w-full h-12 px-4 border border-gray-200 rounded text-sm text-gray-800 placeholder-gray-400 transition-colors duration-200">
+                </div>
+                <div>
+                  <label for="company" class="block text-sm font-semibold text-navy mb-1.5">Company</label>
+                  <input type="text" id="company" name="company" placeholder="ABC Development Group" class="w-full h-12 px-4 border border-gray-200 rounded text-sm text-gray-800 placeholder-gray-400 transition-colors duration-200">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="project-type" class="block text-sm font-semibold text-navy mb-1.5">Project Type <span class="text-red-500">*</span></label>
+                  <select id="project-type" name="project-type" required class="w-full h-12 px-4 border border-gray-200 rounded text-sm text-gray-800 bg-white transition-colors duration-200 appearance-none" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 fill=%22%236B7280%22 viewBox=%220 0 24 24%22><path d=%22M7 10l5 5 5-5z%22/></svg>'); background-repeat: no-repeat; background-position: right 12px center;">
+                    <option value="" disabled selected>Select a project type</option>
+                    <option value="multi-family">Multi-Family</option>
+                    <option value="mixed-use">Mixed-Use</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="senior-living">Senior Living</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="project-size" class="block text-sm font-semibold text-navy mb-1.5">Project Size</label>
+                  <select id="project-size" name="project-size" class="w-full h-12 px-4 border border-gray-200 rounded text-sm text-gray-800 bg-white transition-colors duration-200 appearance-none" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 fill=%22%236B7280%22 viewBox=%220 0 24 24%22><path d=%22M7 10l5 5 5-5z%22/></svg>'); background-repeat: no-repeat; background-position: right 12px center;">
+                    <option value="" disabled selected>Select project size</option>
+                    <option value="under-50k">Under 50,000 SF</option>
+                    <option value="50k-100k">50,000 - 100,000 SF</option>
+                    <option value="100k-250k">100,000 - 250,000 SF</option>
+                    <option value="250k-plus">250,000+ SF</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-semibold text-navy mb-1.5">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project: location, timeline, scope, and any specific requirements or trades needed." class="w-full px-4 py-3 border border-gray-200 rounded text-sm text-gray-800 placeholder-gray-400 transition-colors duration-200 resize-y min-h-[120px]"></textarea>
+              </div>
+
+              <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-tan hover:bg-tan-dark text-navy font-semibold text-lg rounded transition-all duration-200 shadow-md hover:shadow-lg">
+                Submit Inquiry
+                <i data-lucide="send" class="w-5 h-5 ml-2"></i>
+              </button>
+            </form>
+
+            <div id="form-success" class="hidden mt-8 p-6 bg-tan/10 border border-tan/20 rounded-xl">
+              <div class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-6 h-6 text-tan-dark flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h3 class="font-semibold text-navy mb-1">Inquiry Submitted</h3>
+                  <p class="text-sm text-gray-600">Thank you for your interest. Our project management team will review your inquiry and respond within one business day.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar (2 cols) -->
+          <div class="lg:col-span-2 reveal">
+            <!-- Company Info -->
+            <div class="bg-navy rounded-xl p-8 mb-8">
+              <h3 class="font-heading text-xl font-semibold text-white mb-6">Company Information</h3>
+              <ul class="space-y-5">
+                <li class="flex items-start gap-4">
+                  <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-tan/20 text-tan-light flex-shrink-0">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold text-white">Address</p>
+                    <p class="text-sm text-white/60 mt-0.5">4965 US Highway 42, Suite 220<br>Louisville, KY 40222</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-tan/20 text-tan-light flex-shrink-0">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold text-white">Phone</p>
+                    <a href="tel:+15025550195" class="text-sm text-white/60 hover:text-tan-light transition-colors mt-0.5 block">(502) 555-0195</a>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-tan/20 text-tan-light flex-shrink-0">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold text-white">Email</p>
+                    <a href="mailto:info@usdevelopment.com" class="text-sm text-white/60 hover:text-tan-light transition-colors mt-0.5 block">info@usdevelopment.com</a>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-tan/20 text-tan-light flex-shrink-0">
+                    <i data-lucide="clock" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold text-white">Hours</p>
+                    <p class="text-sm text-white/60 mt-0.5">Monday - Friday: 7:00 AM - 5:00 PM<br>Saturday - Sunday: Closed</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="bg-gray-100 rounded-xl p-8 mb-8 text-center">
+              <i data-lucide="map" class="w-12 h-12 text-tan/40 mx-auto mb-3"></i>
+              <p class="text-sm text-gray-500 font-semibold">Louisville, Kentucky</p>
+              <p class="text-xs text-gray-400 mt-1">4965 US Highway 42, Suite 220</p>
+            </div>
+
+            <!-- Family Companies Directory -->
+            <div class="bg-gray-50 rounded-xl p-8">
+              <h3 class="font-heading text-xl font-semibold text-navy mb-6">Family Companies</h3>
+              <div class="space-y-4">
+                <a href="https://us-framing.onrender.com" target="_blank" rel="noopener" class="flex items-start gap-4 p-4 bg-white rounded-lg card-hover">
+                  <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-tan/10 text-tan-dark flex-shrink-0">
+                    <i data-lucide="home" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold text-navy">US Framing</p>
+                    <p class="text-xs text-gray-500 mt-0.5">Nation's largest multi-family wood framing group</p>
+                  </div>
+                </a>
+                <a href="https://us-drywall.onrender.com" target="_blank" rel="noopener" class="flex items-start gap-4 p-4 bg-white rounded-lg card-hover">
+                  <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-tan/10 text-tan-dark flex-shrink-0">
+                    <i data-lucide="paintbrush" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold text-navy">US Drywall</p>
+                    <p class="text-xs text-gray-500 mt-0.5">Commercial drywall and interior finishing</p>
+                  </div>
+                </a>
+                <a href="https://us-exteriors.onrender.com" target="_blank" rel="noopener" class="flex items-start gap-4 p-4 bg-white rounded-lg card-hover">
+                  <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-tan/10 text-tan-dark flex-shrink-0">
+                    <i data-lucide="building" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold text-navy">US Exteriors</p>
+                    <p class="text-xs text-gray-500 mt-0.5">Siding, EIFS, stucco, and building envelope</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="relative py-24 overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=1920&q=80" alt="Active construction site managed by US Development" class="w-full h-full object-cover" loading="lazy">
+        <div class="absolute inset-0 bg-navy/90"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Prefer to Talk?</h2>
+        <p class="font-body text-lg text-white/70 mb-10 max-w-2xl mx-auto">Our project management team is available Monday through Friday, 7 AM to 5 PM. Call us directly to discuss your next project.</p>
+        <a href="tel:+15025550195" class="inline-flex items-center px-8 py-4 bg-tan hover:bg-tan-dark text-navy font-semibold text-lg rounded transition-all duration-200 shadow-lg hover:shadow-xl">
+          <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+          Call (502) 555-0195
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-dark pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <span class="font-heading text-2xl font-bold text-white">US</span>
+            <span class="w-0.5 h-6 bg-tan rounded-full"></span>
+            <span class="font-body text-lg font-light text-white tracking-widest">DEVELOPMENT</span>
+          </div>
+          <p class="text-sm text-white/50 mb-6 leading-relaxed">Turnkey construction management. The coordination layer of the US Family of Companies, integrating framing through finish under one management umbrella.</p>
+        </div>
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Services</h4>
+          <ul class="space-y-2.5">
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Construction Management</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Trade Coordination</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Pre-Construction</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Schedule Management</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Quality Assurance</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Turnkey Delivery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Company</h4>
+          <ul class="space-y-2.5">
+            <li><a href="/about.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">About Us</a></li>
+            <li><a href="/projects.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Projects</a></li>
+            <li><a href="/blog.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Insights</a></li>
+            <li><a href="/contact.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Contact</a></li>
+            <li><a href="https://us-framing.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-tan-light transition-colors">US Framing</a></li>
+            <li><a href="https://us-drywall.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-tan-light transition-colors">US Drywall</a></li>
+            <li><a href="https://us-exteriors.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-tan-light transition-colors">US Exteriors</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-tan-light mt-0.5 flex-shrink-0"></i><span class="text-sm text-white/50">4965 US Highway 42, Suite 220<br>Louisville, KY 40222</span></li>
+            <li class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-tan-light flex-shrink-0"></i><a href="tel:+15025550195" class="text-sm text-white/50 hover:text-tan-light transition-colors">(502) 555-0195</a></li>
+            <li class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-tan-light flex-shrink-0"></i><a href="mailto:info@usdevelopment.com" class="text-sm text-white/50 hover:text-tan-light transition-colors">info@usdevelopment.com</a></li>
+            <li class="flex items-center gap-3"><i data-lucide="clock" class="w-4 h-4 text-tan-light flex-shrink-0"></i><span class="text-sm text-white/50">Mon-Fri: 7:00 AM - 5:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-white/30">&copy; 2026 US Development. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="/privacy-policy.html" class="text-xs text-white/30 hover:text-white/50 transition-colors">Privacy Policy</a>
+          <a href="/terms.html" class="text-xs text-white/30 hover:text-white/50 transition-colors">Terms of Service</a>
+          <a href="/sitemap.xml" class="text-xs text-white/30 hover:text-white/50 transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuClose = document.getElementById('mobile-menu-close');
+    menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; menuBtn.setAttribute('aria-expanded', 'true'); });
+    menuClose.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; menuBtn.setAttribute('aria-expanded', 'false'); });
+    mobileMenu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; menuBtn.setAttribute('aria-expanded', 'false'); }); });
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('nav-scrolled', window.scrollY > 50); });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    const form = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const projectType = document.getElementById('project-type').value;
+      if (!name || !email || !projectType) {
+        form.querySelectorAll('[required]').forEach(field => {
+          if (!field.value.trim() || (field.tagName === 'SELECT' && !field.value)) {
+            field.style.borderColor = '#DC2626';
+          } else {
+            field.style.borderColor = '#E5E7EB';
+          }
+        });
+        return;
+      }
+      form.style.display = 'none';
+      formSuccess.classList.remove('hidden');
+      lucide.createIcons();
+    });
+
+    form.querySelectorAll('input, select, textarea').forEach(field => {
+      field.addEventListener('input', () => { field.style.borderColor = '#E5E7EB'; });
+    });
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; el.style.transition = 'none'; });
+    }
+  </script>
+</body>
+</html>

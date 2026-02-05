@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | US Development</title>
+  <meta name="description" content="US Development privacy policy. Learn how we collect, use, and protect your personal information when you use our construction management website and services.">
+  <link rel="canonical" href="https://usdevelopment.com/privacy-policy.html">
+
+  <meta property="og:title" content="Privacy Policy | US Development">
+  <meta property="og:description" content="Privacy policy for US Development construction management services.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://usdevelopment.com/privacy-policy.html">
+
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1B2A4A', dark: '#0F1A2E', light: '#2A3F6B' },
+            'tan': { DEFAULT: '#C4AF94', dark: '#B09A7E', light: '#D4C4AE' },
+            'warm-gray': { DEFAULT: '#8B8589', dark: '#6B6569', light: '#A8A3A7' },
+          },
+          fontFamily: {
+            'heading': ['Playfair Display', 'Georgia', 'serif'],
+            'body': ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-heading { font-family: 'Playfair Display', Georgia, serif; }
+    .hero-overlay { background: linear-gradient(135deg, rgba(27,42,74,0.92) 0%, rgba(27,42,74,0.75) 100%); }
+    .nav-scrolled { background: rgba(27,42,74,0.98); backdrop-filter: blur(12px); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    html { scroll-behavior: smooth; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #C4AF94; outline-offset: 2px; border-radius: 4px; }
+    .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); z-index: 100; }
+    .skip-link:focus { top: 8px; }
+  </style>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://usdevelopment.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://usdevelopment.com/privacy-policy.html" }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <a href="#main" class="skip-link bg-tan text-navy font-semibold px-4 py-2 rounded-b-lg">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-navy transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="/" class="flex items-center gap-3 group" aria-label="US Development Home">
+          <span class="font-heading text-3xl font-bold text-white">US</span>
+          <span class="w-0.5 h-8 bg-tan rounded-full"></span>
+          <div class="flex flex-col">
+            <span class="font-body text-xl font-light text-white tracking-widest">DEVELOPMENT</span>
+            <span class="font-body text-[9px] font-medium text-tan tracking-[0.2em] -mt-0.5">TURNKEY CONSTRUCTION MANAGEMENT</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="/services.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Services</a>
+          <a href="/projects.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Projects</a>
+          <a href="/about.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">About</a>
+          <a href="/blog.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Insights</a>
+          <a href="/contact.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Contact</a>
+          <a href="/contact.html" class="inline-flex items-center px-6 py-2.5 bg-tan hover:bg-tan-dark text-navy font-semibold text-sm rounded transition-all duration-200 shadow-md hover:shadow-lg">Start Your Project</a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-white" aria-label="Open navigation menu" aria-expanded="false">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-navy/95 z-50 lg:hidden">
+      <div class="flex flex-col items-center justify-center h-full gap-8">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 text-white p-2" aria-label="Close navigation menu">
+          <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        <a href="/services.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Services</a>
+        <a href="/projects.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Projects</a>
+        <a href="/about.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">About</a>
+        <a href="/blog.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Insights</a>
+        <a href="/contact.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Contact</a>
+        <a href="/contact.html" class="mt-4 px-8 py-3 bg-tan text-navy font-semibold text-lg rounded">Start Your Project</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="relative pt-20 bg-navy">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <nav aria-label="Breadcrumb" class="mb-4">
+          <ol class="flex items-center gap-2 text-sm text-white/50">
+            <li><a href="/" class="hover:text-tan-light transition-colors">Home</a></li>
+            <li>/</li>
+            <li class="text-tan-light font-medium">Privacy Policy</li>
+          </ol>
+        </nav>
+        <h1 class="font-heading text-4xl sm:text-5xl font-bold text-white mb-4">Privacy Policy</h1>
+        <p class="font-body text-sm text-white/50">Last updated: February 1, 2026</p>
+      </div>
+    </section>
+
+    <!-- POLICY CONTENT -->
+    <section class="py-16 lg:py-24 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-gray max-w-none reveal">
+
+          <p class="text-gray-600 leading-relaxed mb-8">US Development ("we," "us," or "our") operates the usdevelopment.com website and provides turnkey construction management services. This Privacy Policy describes how we collect, use, and protect your personal information when you interact with our website or services.</p>
+
+          <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">1. Information We Collect</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">We collect information you voluntarily provide when you:</p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6 ml-4">
+            <li>Submit a project inquiry or contact form</li>
+            <li>Request construction management services</li>
+            <li>Subscribe to our newsletter or insights</li>
+            <li>Communicate with us via email, phone, or other channels</li>
+          </ul>
+          <p class="text-gray-600 leading-relaxed mb-4">This information may include:</p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6 ml-4">
+            <li><strong>Personal Information:</strong> Name, email address, phone number, company name, and job title</li>
+            <li><strong>Project Information:</strong> Project type, location, size, timeline, and scope details submitted through our project inquiry forms</li>
+            <li><strong>Usage Data:</strong> IP address, browser type, pages visited, time spent on pages, and referring website</li>
+          </ul>
+
+          <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">2. How We Use Your Information</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">We use the information we collect to:</p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6 ml-4">
+            <li>Respond to project inquiries and provide construction management proposals</li>
+            <li>Communicate with you about our services, including US Framing, US Drywall, US Exteriors, and US Interiors capabilities</li>
+            <li>Send newsletters and industry insights you have opted into</li>
+            <li>Improve our website, services, and user experience</li>
+            <li>Comply with legal obligations and protect our rights</li>
+          </ul>
+
+          <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">3. Cookies and Tracking Technologies</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">Our website may use cookies and similar technologies to:</p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6 ml-4">
+            <li>Remember your preferences and settings</li>
+            <li>Analyze website traffic and usage patterns</li>
+            <li>Improve website performance and functionality</li>
+          </ul>
+          <p class="text-gray-600 leading-relaxed mb-6">You can control cookies through your browser settings. Disabling cookies may limit certain website functionality.</p>
+
+          <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">4. Third-Party Services</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">We may share your information with trusted third parties who assist us in:</p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6 ml-4">
+            <li>Website hosting and analytics</li>
+            <li>Email communication and newsletter delivery</li>
+            <li>Customer relationship management</li>
+          </ul>
+          <p class="text-gray-600 leading-relaxed mb-6">We do not sell, trade, or rent your personal information to third parties for marketing purposes. We may share project-related information with our family companies (US Framing, US Drywall, US Exteriors, US Interiors) to provide coordinated construction management services.</p>
+
+          <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">5. Data Security</h2>
+          <p class="text-gray-600 leading-relaxed mb-6">We implement reasonable administrative, technical, and physical safeguards to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is completely secure, and we cannot guarantee absolute security.</p>
+
+          <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">6. Your Rights</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">You have the right to:</p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6 ml-4">
+            <li>Access, correct, or delete your personal information</li>
+            <li>Opt out of marketing communications at any time</li>
+            <li>Request a copy of the personal data we hold about you</li>
+            <li>Withdraw consent for data processing where applicable</li>
+          </ul>
+          <p class="text-gray-600 leading-relaxed mb-6">To exercise any of these rights, please contact us using the information provided below.</p>
+
+          <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">7. Data Retention</h2>
+          <p class="text-gray-600 leading-relaxed mb-6">We retain your personal information for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required or permitted by law. Project inquiry information may be retained for the duration of the business relationship and a reasonable period thereafter.</p>
+
+          <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">8. Children's Privacy</h2>
+          <p class="text-gray-600 leading-relaxed mb-6">Our website and services are not directed at individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have collected information from a child under 18, we will take steps to delete that information.</p>
+
+          <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">9. Changes to This Policy</h2>
+          <p class="text-gray-600 leading-relaxed mb-6">We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date. We encourage you to review this policy periodically.</p>
+
+          <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">10. Contact Us</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:</p>
+          <div class="bg-gray-50 rounded-xl p-6 mb-6">
+            <p class="text-gray-700 font-semibold mb-2">US Development</p>
+            <p class="text-gray-600 text-sm">4965 US Highway 42, Suite 220<br>Louisville, KY 40222</p>
+            <p class="text-gray-600 text-sm mt-2">Phone: <a href="tel:+15025550195" class="text-tan-dark hover:underline">(502) 555-0195</a></p>
+            <p class="text-gray-600 text-sm">Email: <a href="mailto:info@usdevelopment.com" class="text-tan-dark hover:underline">info@usdevelopment.com</a></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-dark pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <span class="font-heading text-2xl font-bold text-white">US</span>
+            <span class="w-0.5 h-6 bg-tan rounded-full"></span>
+            <span class="font-body text-lg font-light text-white tracking-widest">DEVELOPMENT</span>
+          </div>
+          <p class="text-sm text-white/50 mb-6 leading-relaxed">Turnkey construction management. The coordination layer of the US Family of Companies, integrating framing through finish under one management umbrella.</p>
+        </div>
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Services</h4>
+          <ul class="space-y-2.5">
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Construction Management</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Trade Coordination</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Pre-Construction</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Schedule Management</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Quality Assurance</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Turnkey Delivery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Company</h4>
+          <ul class="space-y-2.5">
+            <li><a href="/about.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">About Us</a></li>
+            <li><a href="/projects.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Projects</a></li>
+            <li><a href="/blog.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Insights</a></li>
+            <li><a href="/contact.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Contact</a></li>
+            <li><a href="https://us-framing.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-tan-light transition-colors">US Framing</a></li>
+            <li><a href="https://us-drywall.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-tan-light transition-colors">US Drywall</a></li>
+            <li><a href="https://us-exteriors.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-tan-light transition-colors">US Exteriors</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-tan-light mt-0.5 flex-shrink-0"></i><span class="text-sm text-white/50">4965 US Highway 42, Suite 220<br>Louisville, KY 40222</span></li>
+            <li class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-tan-light flex-shrink-0"></i><a href="tel:+15025550195" class="text-sm text-white/50 hover:text-tan-light transition-colors">(502) 555-0195</a></li>
+            <li class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-tan-light flex-shrink-0"></i><a href="mailto:info@usdevelopment.com" class="text-sm text-white/50 hover:text-tan-light transition-colors">info@usdevelopment.com</a></li>
+            <li class="flex items-center gap-3"><i data-lucide="clock" class="w-4 h-4 text-tan-light flex-shrink-0"></i><span class="text-sm text-white/50">Mon-Fri: 7:00 AM - 5:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-white/30">&copy; 2026 US Development. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="/privacy-policy.html" class="text-xs text-white/30 hover:text-white/50 transition-colors">Privacy Policy</a>
+          <a href="/terms.html" class="text-xs text-white/30 hover:text-white/50 transition-colors">Terms of Service</a>
+          <a href="/sitemap.xml" class="text-xs text-white/30 hover:text-white/50 transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuClose = document.getElementById('mobile-menu-close');
+    menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; menuBtn.setAttribute('aria-expanded', 'true'); });
+    menuClose.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; menuBtn.setAttribute('aria-expanded', 'false'); });
+    mobileMenu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; menuBtn.setAttribute('aria-expanded', 'false'); }); });
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('nav-scrolled', window.scrollY > 50); });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; el.style.transition = 'none'; });
+    }
+  </script>
+</body>
+</html>

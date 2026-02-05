@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights & Resources | US Development | Construction Management Blog</title>
+  <meta name="description" content="Construction management insights from US Development. Guides on turnkey delivery, integrated subcontractor coordination, and the US Family of Companies approach.">
+  <link rel="canonical" href="https://usdevelopment.com/blog.html">
+
+  <meta property="og:title" content="Insights & Resources | US Development">
+  <meta property="og:description" content="Construction management insights, industry guides, and company news from US Development.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://usdevelopment.com/blog.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1B2A4A', dark: '#0F1A2E', light: '#2A3F6B' },
+            'tan': { DEFAULT: '#C4AF94', dark: '#B09A7E', light: '#D4C4AE' },
+            'warm-gray': { DEFAULT: '#8B8589', dark: '#6B6569', light: '#A8A3A7' },
+          },
+          fontFamily: {
+            'heading': ['Playfair Display', 'Georgia', 'serif'],
+            'body': ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-heading { font-family: 'Playfair Display', Georgia, serif; }
+    .hero-overlay { background: linear-gradient(135deg, rgba(27,42,74,0.92) 0%, rgba(27,42,74,0.75) 100%); }
+    .nav-scrolled { background: rgba(27,42,74,0.98); backdrop-filter: blur(12px); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .stagger > * { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .stagger.visible > *:nth-child(1) { transition-delay: 0ms; opacity: 1; transform: translateY(0); }
+    .stagger.visible > *:nth-child(2) { transition-delay: 150ms; opacity: 1; transform: translateY(0); }
+    .stagger.visible > *:nth-child(3) { transition-delay: 300ms; opacity: 1; transform: translateY(0); }
+    html { scroll-behavior: smooth; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #C4AF94; outline-offset: 2px; border-radius: 4px; }
+    .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); z-index: 100; }
+    .skip-link:focus { top: 8px; }
+  </style>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://usdevelopment.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://usdevelopment.com/blog.html" }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <a href="#main" class="skip-link bg-tan text-navy font-semibold px-4 py-2 rounded-b-lg">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-navy transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="/" class="flex items-center gap-3 group" aria-label="US Development Home">
+          <span class="font-heading text-3xl font-bold text-white">US</span>
+          <span class="w-0.5 h-8 bg-tan rounded-full"></span>
+          <div class="flex flex-col">
+            <span class="font-body text-xl font-light text-white tracking-widest">DEVELOPMENT</span>
+            <span class="font-body text-[9px] font-medium text-tan tracking-[0.2em] -mt-0.5">TURNKEY CONSTRUCTION MANAGEMENT</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="/services.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Services</a>
+          <a href="/projects.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Projects</a>
+          <a href="/about.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">About</a>
+          <a href="/blog.html" class="text-sm font-medium text-tan border-b-2 border-tan pb-0.5">Insights</a>
+          <a href="/contact.html" class="text-sm font-medium text-white/80 hover:text-tan transition-colors">Contact</a>
+          <a href="/contact.html" class="inline-flex items-center px-6 py-2.5 bg-tan hover:bg-tan-dark text-navy font-semibold text-sm rounded transition-all duration-200 shadow-md hover:shadow-lg">Start Your Project</a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-white" aria-label="Open navigation menu" aria-expanded="false">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-navy/95 z-50 lg:hidden">
+      <div class="flex flex-col items-center justify-center h-full gap-8">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 text-white p-2" aria-label="Close navigation menu">
+          <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        <a href="/services.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Services</a>
+        <a href="/projects.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Projects</a>
+        <a href="/about.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">About</a>
+        <a href="/blog.html" class="text-2xl font-heading text-tan">Insights</a>
+        <a href="/contact.html" class="text-2xl font-heading text-white hover:text-tan transition-colors">Contact</a>
+        <a href="/contact.html" class="mt-4 px-8 py-3 bg-tan text-navy font-semibold text-lg rounded">Start Your Project</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="relative pt-20 min-h-[35vh] flex items-center overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&q=80" alt="Construction management team reviewing project plans" class="w-full h-full object-cover" loading="eager">
+        <div class="hero-overlay absolute inset-0"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <nav aria-label="Breadcrumb" class="mb-4">
+          <ol class="flex items-center gap-2 text-sm text-white/50">
+            <li><a href="/" class="hover:text-tan-light transition-colors">Home</a></li>
+            <li>/</li>
+            <li class="text-tan-light font-medium">Insights</li>
+          </ol>
+        </nav>
+        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">Insights & Resources</h1>
+        <p class="font-body text-lg text-white/70 max-w-2xl">Industry guides, technical deep-dives, and company news from the US Development team. Practical knowledge for owners, developers, and general contractors.</p>
+      </div>
+    </section>
+
+    <!-- ARTICLE CARDS -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger">
+
+          <!-- Article 1 -->
+          <a href="/blog/turnkey-construction-management-2026.html" class="group bg-white rounded-xl overflow-hidden shadow-sm card-hover border border-gray-100">
+            <div class="aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="Construction management coordination on a multi-family project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="text-xs font-semibold text-tan-dark bg-tan/15 px-2.5 py-1 rounded-full">Industry Guide</span>
+                <span class="text-xs text-gray-400">Feb 1, 2026</span>
+              </div>
+              <h3 class="font-heading text-xl font-semibold text-navy mb-3 group-hover:text-tan-dark transition-colors">Why Turnkey Construction Management Saves GCs Time and Money in 2026</h3>
+              <p class="text-sm text-gray-500 leading-relaxed mb-4">Discover how integrated construction management eliminates coordination gaps, reduces change orders, and accelerates schedules for general contractors managing multi-trade projects.</p>
+              <span class="inline-flex items-center text-sm font-semibold text-tan-dark group-hover:text-navy transition-colors">
+                Read Article <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5"></i>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 2 -->
+          <a href="/blog/integrated-subcontractor-coordination.html" class="group bg-white rounded-xl overflow-hidden shadow-sm card-hover border border-gray-100">
+            <div class="aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1590274853856-f22d5ee3d228?w=600&q=80" alt="Subcontractor coordination and trade scheduling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="text-xs font-semibold text-tan-dark bg-tan/15 px-2.5 py-1 rounded-full">Technical Guide</span>
+                <span class="text-xs text-gray-400">Jan 15, 2026</span>
+              </div>
+              <h3 class="font-heading text-xl font-semibold text-navy mb-3 group-hover:text-tan-dark transition-colors">Integrated Subcontractor Coordination: The Single-Source Advantage</h3>
+              <p class="text-sm text-gray-500 leading-relaxed mb-4">How a single management layer coordinating framing, drywall, and exteriors reduces risk, eliminates finger-pointing, and keeps multi-family projects on schedule.</p>
+              <span class="inline-flex items-center text-sm font-semibold text-tan-dark group-hover:text-navy transition-colors">
+                Read Article <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5"></i>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 3 -->
+          <a href="/blog/us-family-of-companies.html" class="group bg-white rounded-xl overflow-hidden shadow-sm card-hover border border-gray-100">
+            <div class="aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="US Family of Companies integrated project delivery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="text-xs font-semibold text-tan-dark bg-tan/15 px-2.5 py-1 rounded-full">Company News</span>
+                <span class="text-xs text-gray-400">Jan 5, 2026</span>
+              </div>
+              <h3 class="font-heading text-xl font-semibold text-navy mb-3 group-hover:text-tan-dark transition-colors">The US Family of Companies: Framing Through Finish</h3>
+              <p class="text-sm text-gray-500 leading-relaxed mb-4">Meet the US Family of Companies -- US Framing, US Drywall, US Exteriors, and the forthcoming US Interiors -- and learn how US Development ties it all together.</p>
+              <span class="inline-flex items-center text-sm font-semibold text-tan-dark group-hover:text-navy transition-colors">
+                Read Article <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5"></i>
+              </span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SIGNUP -->
+    <section class="py-20 lg:py-28 bg-gray-50">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+        <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-tan/15 flex items-center justify-center">
+          <i data-lucide="mail" class="w-8 h-8 text-tan-dark"></i>
+        </div>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">Stay Informed</h2>
+        <p class="font-body text-lg text-gray-500 mb-8 max-w-xl mx-auto">Get construction management insights, industry trends, and company updates delivered to your inbox. No spam -- just practical knowledge for construction professionals.</p>
+        <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto" onsubmit="event.preventDefault(); this.innerHTML='<p class=\'text-tan-dark font-semibold py-3\'>Thank you for subscribing!</p>';">
+          <input type="email" placeholder="Enter your email address" required class="flex-1 h-12 px-4 border border-gray-200 rounded text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-tan focus:ring-2 focus:ring-tan/15">
+          <button type="submit" class="inline-flex items-center justify-center px-6 py-3 bg-tan hover:bg-tan-dark text-navy font-semibold text-sm rounded transition-all duration-200 shadow-md hover:shadow-lg whitespace-nowrap">
+            Subscribe
+            <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="relative py-24 overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=80" alt="Modern multi-family construction project" class="w-full h-full object-cover" loading="lazy">
+        <div class="absolute inset-0 bg-navy/90"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
+        <p class="font-body text-lg text-white/70 mb-10 max-w-2xl mx-auto">Let US Development coordinate your next multi-family, mixed-use, or commercial project with turnkey management from framing through finish.</p>
+        <a href="/contact.html" class="inline-flex items-center px-8 py-4 bg-tan hover:bg-tan-dark text-navy font-semibold text-lg rounded transition-all duration-200 shadow-lg hover:shadow-xl">
+          Start Your Project <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-dark pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <span class="font-heading text-2xl font-bold text-white">US</span>
+            <span class="w-0.5 h-6 bg-tan rounded-full"></span>
+            <span class="font-body text-lg font-light text-white tracking-widest">DEVELOPMENT</span>
+          </div>
+          <p class="text-sm text-white/50 mb-6 leading-relaxed">Turnkey construction management. The coordination layer of the US Family of Companies, integrating framing through finish under one management umbrella.</p>
+        </div>
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Services</h4>
+          <ul class="space-y-2.5">
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Construction Management</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Trade Coordination</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Pre-Construction</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Schedule Management</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Quality Assurance</a></li>
+            <li><a href="/services.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Turnkey Delivery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Company</h4>
+          <ul class="space-y-2.5">
+            <li><a href="/about.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">About Us</a></li>
+            <li><a href="/projects.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Projects</a></li>
+            <li><a href="/blog.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Insights</a></li>
+            <li><a href="/contact.html" class="text-sm text-white/50 hover:text-tan-light transition-colors">Contact</a></li>
+            <li><a href="https://us-framing.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-tan-light transition-colors">US Framing</a></li>
+            <li><a href="https://us-drywall.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-tan-light transition-colors">US Drywall</a></li>
+            <li><a href="https://us-exteriors.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-tan-light transition-colors">US Exteriors</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-tan-light mt-0.5 flex-shrink-0"></i><span class="text-sm text-white/50">4965 US Highway 42, Suite 220<br>Louisville, KY 40222</span></li>
+            <li class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-tan-light flex-shrink-0"></i><a href="tel:+15025550195" class="text-sm text-white/50 hover:text-tan-light transition-colors">(502) 555-0195</a></li>
+            <li class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-tan-light flex-shrink-0"></i><a href="mailto:info@usdevelopment.com" class="text-sm text-white/50 hover:text-tan-light transition-colors">info@usdevelopment.com</a></li>
+            <li class="flex items-center gap-3"><i data-lucide="clock" class="w-4 h-4 text-tan-light flex-shrink-0"></i><span class="text-sm text-white/50">Mon-Fri: 7:00 AM - 5:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-white/30">&copy; 2026 US Development. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="/privacy-policy.html" class="text-xs text-white/30 hover:text-white/50 transition-colors">Privacy Policy</a>
+          <a href="/terms.html" class="text-xs text-white/30 hover:text-white/50 transition-colors">Terms of Service</a>
+          <a href="/sitemap.xml" class="text-xs text-white/30 hover:text-white/50 transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuClose = document.getElementById('mobile-menu-close');
+    menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; menuBtn.setAttribute('aria-expanded', 'true'); });
+    menuClose.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; menuBtn.setAttribute('aria-expanded', 'false'); });
+    mobileMenu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; menuBtn.setAttribute('aria-expanded', 'false'); }); });
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('nav-scrolled', window.scrollY > 50); });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal, .stagger').forEach(el => revealObserver.observe(el));
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal, .stagger, .stagger > *').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; el.style.transition = 'none'; });
+    }
+  </script>
+</body>
+</html>
