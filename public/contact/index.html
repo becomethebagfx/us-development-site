@@ -135,6 +135,9 @@
             <p class="text-gray-500 mb-8">Fill out the form below and our project management team will respond within one business day.</p>
 
             <form id="contact-form" class="space-y-6" novalidate>
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="New Project Inquiry — US Development Website">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label for="name" class="block text-sm font-semibold text-navy mb-1.5">Full Name <span class="text-red-500">*</span></label>
@@ -406,9 +409,33 @@
         });
         return;
       }
-      form.style.display = 'none';
-      formSuccess.classList.remove('hidden');
-      lucide.createIcons();
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalHTML = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Sending...';
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+      fetch('https://formsubmit.co/ajax/brandonhayman.b@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(r => r.json()).then(result => {
+        if (result.success) {
+          form.style.display = 'none';
+          formSuccess.classList.remove('hidden');
+          lucide.createIcons();
+        } else {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalHTML;
+          lucide.createIcons();
+          alert('Something went wrong. Please try again or call us at (502) 555-0195.');
+        }
+      }).catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalHTML;
+        lucide.createIcons();
+        alert('Something went wrong. Please try again or call us at (502) 555-0195.');
+      });
     });
 
     form.querySelectorAll('input, select, textarea').forEach(field => {
